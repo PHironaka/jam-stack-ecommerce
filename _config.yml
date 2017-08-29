@@ -8,8 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: Howler Brand is a branded content studio and subsidiary of Howler Monkey
-  Productions.
+description: Howler Brand is the creative studio of Howler Monkey Productions.
 logo: "/uploads/howler-donate.png"
 teaser: 
 locale: en
