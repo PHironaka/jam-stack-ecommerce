@@ -1,7 +1,7 @@
 ---
-layout: archive
+layout: landing
 permalink: /
-title: "Latest Posts"
+title: "Howler Brand - Content Production "
 ---
 
 <div class="tiles">
