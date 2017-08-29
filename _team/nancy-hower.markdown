@@ -1,6 +1,7 @@
 ---
 title: Nancy Hower
 date: 2017-08-29 18:05:00 Z
+image: "/uploads/Nancy-and-John-Headshot-300x200-II.png"
 ---
 
 Nancy Hower, along with her producing partner John Lehr, co-created Hulu’s comedy “Quick Draw,” which returned for a second in 2015. Both executive-produce and co-write the series, while Hower directs, and Lehr stars.
