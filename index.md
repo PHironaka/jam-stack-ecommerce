@@ -1,7 +1,7 @@
 ---
+title: 'Howler Brand - Content Production '
+permalink: "/"
 layout: landing
-permalink: /
-title: "Howler Brand - Content Production "
 ---
 
 <div class="tiles">
