@@ -7,8 +7,20 @@ layout: default
     <p>{{site.intro}}</p>
   </div>
 
+  {% for page in site.pages %}
+  {% if page.title == 'About' %}
+  <div class="main-capabilities">
+    {{page.content}}
+  </div>
+
+  {% endif %}
+  {% endfor %}
+
+
+
+
   <div class="main-services">
-    <h4>Our Capabilities</h4>
+    <h3>Our Capabilities</h3>
     <p>We can work end-to-end to create films directly with brands</p>
     <div class="main-services--item">
   <img class="icon icons8-Strategy-Board" width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC5klEQVRoQ+2a4Y3WMAyG35sAmABuAmACYAM24JgAmACYADYANoAJDiYAJgAmACYAPVIsRaFfaidNU6Hzn+r0tU2evHZsp3emcXZL0nNJD9MQ7yW9lPR9xJBnI14q6bqkb+maD/FL0rkkrpvaKJC3kh5J+lQock/SO0kXm1JIWgPBNRgUN2mxG9nqo9LPlpckd2RxcM1Fq4G8lvSkcWAe+yrpTvH8F0m3O94JyIul52sgrB6reFcSE6jZn/TjmsLlO7zPsSCfkzLE2D9WG9g7CC+N3JtPIvJc9d6tQVq9xqPkLiA9vr8US0sLsgtIqxKR565AIoEYWdnWew+vyJtE9rhni99q12pdZSCsXCFz12AOq0gOYQtRgzksiE3eG4tXIN6Vao0Pe87quLLADNVlPcFOEYc9SNfLdKXIHGHDXMvKknxFveWGgd6XlG+/HysrMAyEEp+Brb8AgolF2ljaYWva6OUXS/QENxQEdzLfRhncLALCvdfSRH+sdKLDQIgRIFACQxlg1mIE1Wihn6XGjdyBkRinuJbFBhPDbBKndh9c8VWWyQGhnfbaMEW8E+A+zrYIamB+p747AsE7poIQyKhgh3QcD+FCLYd000A4geHEo0eFXPXdQVABN7LY+ZBUiOxmS267Kwi70dNMBdyIM9+aeSuE3UAAIB4wjkX526OCt0IYBlKWFwQwOYG4qOWDUh1vhTAMJFJe1FwLEE+FMAwkUl6sxYinQhgGgmvl5YX5OiWLJzYMzlshDAMpV9mCnYlxiLB28B2pDHbN7OQPtlqKRxShljLFopOenkcIXGoovlZhgAAUcbVT0Lu5Vj4BEiFA9Botfcp0RfIJsBOhCK7m+Vi05n5TFLFJ4WrEDqpE+vNDKVJOpjeBTlUkh+lNoIcBKRNopB7bNY+sBWvv74dRZBqI+fQWW2cvhH1nP3n2VTv7pa+g4zuSNf3nAwDAkKVvTqZBCWvaFqfi+VA/mcE3/H8D8hcm/N0zA4HhvwAAAABJRU5ErkJggg==">
@@ -78,7 +90,7 @@ layout: default
 
 
     <div class="main-contact">
-      <h4>Wanna work with us? Please reach out:</h4>
+      <p>Wanna work with us? Please reach out:</p>
       <a href="mailto:info@howler.tv">info@howler.tv</a>
 
     </div>
