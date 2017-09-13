@@ -382,6 +382,12 @@ input[type="submit"] {
 	 list-style: none;
 	 display: inline;
 margin: 0 3em 0 0;
+
+@include media($small) {
+	display: block;
+	margin-top: 1em;
+}
+
  }
 
 nav {

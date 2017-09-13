@@ -215,12 +215,19 @@
 
 #main {
 
+	h4 {
+		font-weight: 400;
+	}
+
 	.main-about {
 		width: 78.94039%;
 		display: block;
 margin: 1em auto;
 text-align: center;
+@include media($small) {
+	width: 100%;
 
+}
 	}
 
 
