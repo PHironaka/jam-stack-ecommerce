@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+  <div class="main-about">
+    <p>{{site.intro}}</p>
+  </div>
+
+  {% for page in site.pages %}
+  {% if page.title == 'About' %}
+  <div class="main-capabilities{% if page.title == 'About' %}-about{% endif %}">
+    {{page.content}}
+  </div>
+
+  {% endif %}
+  {% endfor %}
+
+
+
+
+  <div class="main-work">
+    <h4>Our Capabilities</h4>
+    <p>We can work end-to-end to create films directly with brands</p>
+    <div class="main-services--item">
+  <img class="icon icons8-Strategy-Board" width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC5klEQVRoQ+2a4Y3WMAyG35sAmABuAmACYAM24JgAmACYADYANoAJDiYAJgAmACYAPVIsRaFfaidNU6Hzn+r0tU2evHZsp3emcXZL0nNJD9MQ7yW9lPR9xJBnI14q6bqkb+maD/FL0rkkrpvaKJC3kh5J+lQock/SO0kXm1JIWgPBNRgUN2mxG9nqo9LPlpckd2RxcM1Fq4G8lvSkcWAe+yrpTvH8F0m3O94JyIul52sgrB6reFcSE6jZn/TjmsLlO7zPsSCfkzLE2D9WG9g7CC+N3JtPIvJc9d6tQVq9xqPkLiA9vr8US0sLsgtIqxKR565AIoEYWdnWew+vyJtE9rhni99q12pdZSCsXCFz12AOq0gOYQtRgzksiE3eG4tXIN6Vao0Pe87quLLADNVlPcFOEYc9SNfLdKXIHGHDXMvKknxFveWGgd6XlG+/HysrMAyEEp+Brb8AgolF2ljaYWva6OUXS/QENxQEdzLfRhncLALCvdfSRH+sdKLDQIgRIFACQxlg1mIE1Wihn6XGjdyBkRinuJbFBhPDbBKndh9c8VWWyQGhnfbaMEW8E+A+zrYIamB+p747AsE7poIQyKhgh3QcD+FCLYd000A4geHEo0eFXPXdQVABN7LY+ZBUiOxmS267Kwi70dNMBdyIM9+aeSuE3UAAIB4wjkX526OCt0IYBlKWFwQwOYG4qOWDUh1vhTAMJFJe1FwLEE+FMAwkUl6sxYinQhgGgmvl5YX5OiWLJzYMzlshDAMpV9mCnYlxiLB28B2pDHbN7OQPtlqKRxShljLFopOenkcIXGoovlZhgAAUcbVT0Lu5Vj4BEiFA9Botfcp0RfIJsBOhCK7m+Vi05n5TFLFJ4WrEDqpE+vNDKVJOpjeBTlUkh+lNoIcBKRNopB7bNY+sBWvv74dRZBqI+fQWW2cvhH1nP3n2VTv7pa+g4zuSNf3nAwDAkKVvTqZBCWvaFqfi+VA/mcE3/H8D8hcm/N0zA4HhvwAAAABJRU5ErkJggg==">
+      <p>Strategic Positioning</p>
+    </div>
+
+    <div class="main-services--item">
+  <img class="icon icons8-Innovation" width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAFBklEQVRoQ9Wai5GNQRCFeyNABIgAESACRIAIEAEiQASIABEgAkSACBAB9W3N2Zo7t3u65z62ylTd2rv7z/T06T79mPn3xI4zrpvZTTO7ZWYX24e/aXxqX36bGd8/m9nXfVQ52WfxsPaKmT01s7tNcR7/6RT8YWZ8AKcBuAsdqPdm9rzNW1LtEEBQ7L6ZPWg7f2hWxtIVK2MAZGAAfgKMtQCS51JQ+wLBA8+a5bEm37H6rgMaPm4fAL00sycVYbsCwYqvmwXxAN6A7/1QfACQwRzWXOrmPjKzt85aAcJQePVh5t1dgLDJ9xYHWAureQNaXDazq+0h3kKx240yxMeXZvFIBsbAEH/bupCqq0AA8dHMUOLGYCUUZfQ/UVweIAbemBnexHtQ6MUg513zkLyIPPbCKL/a3NHzp5uuAsGCCMbVKNUPfifoBRDQ0CmyNoAAp+fy2L3mhV62wMAE5G+NFSCyYEQnFMP1KBQpP4tbvAD4Pj338xVj7v5VIIqLn80jlURyjDlQ7FqLuw2KVYGINgrUYyhZkYm3iNFXLcbO1lSBEGi0EXB6ZdzpCh3U04CCUInUu1p3WEuNUTYsBzvKk028AI9AEZxkJPEdI6hKA4jnUISBt+G9m42cDRSrADkzQsUjolVfyGZeUVDSZxH4rPeUBBDPyXSlotc2detPBYgsGWUTL7N8a96oWFn1ZVonBstRIDfipAKERXBZTWHkDSxMnSGzAboCQrIUxBiNhJINPIj8M+NWgdCJqmJHmxBHWHeDu5lG3fNZQRzFbLEkAyJLZYGON6i6W2lxAQhTCV5RbLZ0GYgCd+yrxk28vmkRw+l0OgI64iyxLAMh15Ml+hrgKcg8te27ABhjJSu8S0BoS3BzhS5RZsMIpNfxcMTfsfxYP0Tl2fEA0OilzJgWxCqtEBQBUTGllhBnDEDQZhCffO8re+WMgoyl9FulFYJVNL3k0XetABYIrD8elAR8Rq2lgrhCK4BIWe8swXMUxPIzEDIIc3X48uLNBRul3xVasRnAUZSCGBW0rE4ohWfFV3I2MlsEZIVWslp28BrP7KO18RZpfoybcZ6rmwdklVb9RnCeCwcUGtvzGRAZodJBuC3TLDizIujxV2drj2IREPVoG+k0KEaKj61Y9IDsQqt+X1l3bGsiIFVK9dlxq/KPQPahVQ8GWkGB/hSH5XWLqLlKpRVKsYZ+Ds9tnVRHIKvZKmpHqnLkpUrHLJluAzsCkWC17AQvV6KrQ62Gzg3RejzCSTLr5VgPBQHszh2BIJgqrfM0AlDGvRRL0EEtDlmzywX2Q352+kwpODuP9BfJWTfqYQJIxv3qMVrtfUjB6sEqUygCklXprS428HIY5Jp/TCDhrWDbXDUha9nV7U6NeUwg/YUCBay/jOAZZ3z2nzWIMnhK02MC6btivfRUYAOEbOW18jvF27GBoBTKUgi5PmUAYPU1XXoldR5AVmuQN3/rHmuc9L8ASdN0BiQtRIcwd0HG7Ch9ujwDwhw1gFT36DKaMwgFVP/doEq99K58AkitU6hvBYjyPSD6ywKURnlvqDWh0Vt9/+HJE5DwjFQBgmCURpgup1GuBwaHUbp/GVpgTHmKalLYKlWBVHZM3V8REswRkOiWphQj1f3xyoxuVTnePB34wjblkB5JU+Q+SNqJ81yAKEXScq+85Kngw9MknfD1xiE9gvsBo1akomB1Dm0Nsml13PEP/eh6QsgHmPQAAAAASUVORK5CYII=">
+      <p>Creative Development</p>
+    </div>
+
+
+    <div class="main-services--item">
+  <img class="icon icons8-Property-Time" width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADsklEQVRoQ+2a7ZUMQRSG342AjQARsBFYESACRMBGgAgQARsBIkAEiAARIALO06ffOXVq6mtru3fK2DpnfnRPV9d97lfdujMH2pNxsCccugQZzZK2yHVJ10YTLpLnq6RfORkBeSjp9eAQiAfEHUlfUrIC8k3Sb0lPBoa5KumtpNNZ8VuiAvJH0nNJzwYGQbSPs3zHOYvsFQi0Jh7VMMTyD0lFi4wqfCzXpxrIZYxcoCn/r2Bvca1bcy4/kfTuAi3hpbotQtnC+C4JiA/SVGSSNdhduXclACKj8Ox5yh2COTe6QdD67XnHfxlBsBgwN4NV30u6J4lnH3da7LBQT3WDUBYwGWEpYWwJy8j3WCU2PdfJXF+Bw5p8FrcIL0TYN3P5kizWOjXfM63bIj2LrTlnMRCs80LSq1wpvSbFUkUjEGQtYuL+v5Z+yVqcGhGcswAQj+aYSWWtJQyyStZCcPzSe0UI4czUk51ywGQsEssqWcswnB5Liyxhjdo7Fgv22kJrf78oyANJ7ODZbsZCNC5z8AhvzFQM3pi3ljnLmZ1OC6c0ikZeusagtGGNsGII1yGOiNWt02wJhGYEgY7ghgi7GNxzYdkKhRCpMsSVNe+jf0U8hpUEVqGO44NMZFTetfGMEoj7Xa5o41YMCYAXtw4WZU4MwjtQCrLUkgpAPPN0BqXPNcHUXMsw2X5SK0XmOR8POAIAlILkXlzn8Sx7G/cnmBoI67PYWgXjZ0k35jVSLkeryseDWBdW8nQobAE5p9Kz0y1IvNGGEwDJdk7moOfMdLhLEDIPwV1KGDUQKgtqwJNdgRC0P+dKutRzroFgvelAtisQa7LkVgjZAjKdYlMgaIq9g1yO2QlIKmAmEPhcHwUNCEzLNZrB7zmzUMUy0DabHAHNYG/CpwlQ5pFxSq1aQEg0vD83ph5BCiRsaltzbhf52gLE1whKjvcPSPE1QgPC/BYQJwSUivVSg83xbgrEG5ctgkbI2zmL+L4tgoaIAVsEqzigAQOee1i2pZ9Wg5ksuqsY2QRpY8clB7NJGoCgSdwJLa1d1Yau4RKH+Cm1gTzHMGHRatc9AgS3wY3CruFam2DqvbgGMdMy7OIoHGvwsyFF5nH4O/uSx9YWoXiGNUkOdGbO8hummyFYc2ocjvCHAbyBA1spM4WKIXFsNUNGAEFI94uJFfw+dQoFAGC+96/Qmz7CKCDAuAHuPy6EG2VYkwG5da4ZCcTug8/7E7oUGx9w2T8MtAbm0M+NaJEuhe0NyF8cjSLvS6GF9wAAAABJRU5ErkJggg==">
+      <p>Pre/Post Production Management </p>
+    </div>
+
+    <div class="main-services--item">
+  <img class="icon icons8-Pencil-Tip" width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACkklEQVRoQ92Zi00cMRCGfyoAOggVABWQVBCoIKEDqAA6IFSQpAOoAKggpAKgAqAC0Ic8yFi3u/atX5yl0+m0e9755u3ZNa3IWlsRDvUEsiPpStJfSUepCu4FxCA2JJ1/VhAfAmv8TLUG97e2SBaI1iDZIFqCZIVoBZIdogVIEYjaIMUgaoIUhagFUhyiBkhJiDNJXyQdlAYpCfHbdQDPkmhrilX2WhBfJd2WAqkOUQKkCURukGYQOUGaQuQCaQ6RA6QLiLkg3UDMAekKYlmQ7iCWAekSIhWkW4gUEB/iRhI9Tq7lN4DvvVPq5jHjILrLO+syJT1J2nLfqc8L788CEWsRxpf0/v+dFNuSvkm6nkmRDSIW5J8kXIsDDN8nkv44i/D73s1rU8CyQsSAICggdoBB2L0BSwB3GGGl7BAxIAj3wxssvzhBcTOucaghQHG/9QiXKwIRA/LognzXCb3vQC4CzZ86lxsbQheDmAJhKs7D0T4uNrawCu82FqVmsh7Jgv1w0aVT7JgAY+kXrX+XdCzp1wSIZbbQIkAAiCKKQYxZhDELtYO1GVEzEBZN42LAkMmqQYyBmIYvJVlcDBnF3Mq/DggLhRS1hD10yLWwhg2/wsAOgXAb0vLbWMYtS9FVIIYsYrXjwcFMhMeHy8QU1sRK1SCGQKx2xL7PA5xaQ1Z6m/rVhlgEEjaIVGrAwsV9pn0/NVuhtBYmxZqz7g1jxGqHv6kPg/AEv//mFRcijkjRfpzMEiz1zyGIpdFwHzSM35MAbJHRAFhksVQ5Zt/vg/i1Y2hjEgCaB8BS7Gwhcmzgg1i/FO7bhetMwfogVjvsP/RNuA3a51TY9fJBCFSyEcLz6cp1prQYc2af2qOL6ysD8goTUtczAY3l3gAAAABJRU5ErkJggg==">
+      <p>In House Editorial Staff </p>
+    </div>
+
+    <div class="main-services--item">
+  <img class="icon icons8-Music-Video" width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACw0lEQVRoQ+2ZjU0cMRSEhwqgA6ACSAUkFUAq4FIBdBBSQUIFkA5CBYEOkg5CB1AB6Dt5pD3n9nT22osX7ZNO2h+v/cbzfn07eiey805waAbSGpMzIy0ysifpQtLH1pTbUp97SdeY1q2kc0l/JT1t+XErwyDhSNJPgLxwIWnRinaJeiyJMJBvkq4CmP3EiWoPf5CE+ZyF3fd6j8Ga0PtrDMRmVlu5lPm/BIV/BF/2t7aitUBSFmhl7AwkhQns+lTSL0l3KR8mjB2FkeUiQal/AdC1JK5LyahAcFjC+0nQ/o8knBeWhuauUYG4pjsIgADlMO/Qn8vQmwDpKov/wApmNqQ8ehMgMNL1DxIdMikgl5K+hyyNOQFikkC6EQwWzAylxqQYMZDPkjAxGMLhqaWaBnIcaiMiFFHLQD51TIp3hF8SZq5Uc3Z6G6IRvYKlD0iu8t3vqgCxQ2MuVNL4ATtOAlzHSLNAaNLI1uSIWCYDBIf9Lcn9Qx+QwynUWjCC4xKZYgEkIIhYJaWKj7iLAwzX5AgOB/AdGOtjawiwKkBQKE58PHsOwHhXWqoBQVHMhx8sUIYQtYaW630bUBVI6V3fNN8KEGI+vzEFc4MpBOYoKMn6MEf45p7ggFABcBr6oaOgmzTeLXwcNCaA7looti5Z2s/ckMX38dHQsgYiZPoQbExAZH1bAbt6ExjgOVEO5V3m+PDQodudptk8iQ/oxgQSr4XSmwJC3/sVH+Fkg12YoizNDEawUfoCHkxRIOARIPQNZOLWDq+33VSqh7Maf72RAAmNfXOX6NP/AzkD2cD7ZBlxb+4Yzz2h0iYUY+Y94qxO3iBq+n5b31gZN9S0nMi65UaqIgDbHVriDwFiEPyJSq2UW92aPfqW7H4lF4hB2ERyQZg9wNjkssDkAlnXPKWaVN/4rNP5XCCllC42zwyk2FYWmugVWIzbxptXbFQAAAAASUVORK5CYII=">
+      <p>Music supervision </p>
+    </div>
+
+    <!-- Strategy Board icon by Icons8 -->
+
+  </div>
+
+
+
+
+  <div class="main-partners">
+    <h4>Our Partners</h4>
+
+
+    {% for logos in site.logos %}
+    <div class="main-partners--item">
+<img  src="{{logos.image}}">
+    </div>
+    {% endfor %}
+
+
+
+  </div>
+
+
+    <div class="main-contact">
+      <h4>Interested in working with us? Please reach out:</h4>
+      <a href="mailto:info@howler.tv">info@howler.tv</a>
+
+    </div>
+
+
+
+</div>

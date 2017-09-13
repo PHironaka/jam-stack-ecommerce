@@ -1,8 +1,8 @@
-<header id="masthead">
+<header id="masthead{% if page.title == 'About' %}-about{% endif %}">
   <div id="page-wrapper">
 
   <div class="inner-wrap">
-    <a href="{{ site.url }}/" class="site-title"><img src="{{ site.logo }}" alt="Howler Brand"></a>
+    <a href="{{ site.url }}/" class="site-title{% if page.title == 'About' %}-about{% endif %}"><img src="{{ site.logo }}" alt="Howler Brand"></a>
     <!-- <nav role="navigation" class="menu top-menu">
         {% include navigation.html %}
     </nav> -->
