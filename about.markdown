@@ -5,7 +5,7 @@ permalink: "/about"
 layout: alt-landing
 ---
 
-### We’re film specialists, across a range of subject matter:
+#### We’re film specialists, across a range of subject matter:
 
 * _Case studies
 * _Internal vision films
