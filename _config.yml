@@ -2,12 +2,6 @@
 title: Jam Stack Tutorial
 timezone: UTC
 collections:
-  logos:
-    title: Logos
-    output: true
-  posts:
-    title: Posts
-    output: true
   products:
     title: Products
     output: true
@@ -16,53 +10,17 @@ collections:
     output: true
 description: Test site for Jamstack Commerce
 snipcart_api_key: Mjg2MjA2NzgtNzVhMy00ZjY4LWEzZDItYzlmZmViNmQ3MGUzNjM2NDE2MTA5MTE2OTk3NTU2
-locale: en
-url: 
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: Snipcart
+github_username:  Snipcart
+markdown: kramdown
 feed:
   path: atom.xml
 sass:
   sass_dir: _sass
   style: compressed
 permalink: "/:categories/:title/"
-kramdown:
-  toc_levels: 1..2
-highlighter: rouge
 gems:
 - jekyll-sitemap
 - jekyll-gist
 - jekyll-feed
-owner:
-  name: 
-  email: 
-  twitter: 
-  google:
-    ad-client: 
-    ad-slot: 
-  bio: 
-  avatar: bio-photo.jpg
-  disqus-shortname: 
-include:
-- ".htaccess"
-exclude:
-- "*.less"
-- "*.sublime-project"
-- "*.sublime-workspace"
-- ".asset-cache"
-- ".bundle"
-- ".jekyll-assets-cache"
-- ".sass-cache"
-- CHANGELOG
-- Capfile
-- Gemfile
-- Gruntfile.js
-- LICENSE
-- README
-- Rakefile
-- config
-- gulpfile.js
-- lib
-- log
-- node_modules
-- package.json
-- spec
-- tmp

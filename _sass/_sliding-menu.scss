@@ -98,7 +98,7 @@
       @include media($small) {
         @include font-size(48,no,1);
       }
-      font-family: $base-font;
+      font-family: $base-font-family;
       text-transform: uppercase;
       font-weight: 400;
     }

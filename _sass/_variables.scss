@@ -6,9 +6,8 @@
    Typography variables
    ========================================================================== */
 
-$base-font                   	: 'Source Sans Pro', sans-serif;
+$base-font-family             : 'Source Sans Pro', sans-serif;
 $heading-font                	: 'Source Sans Pro', sans-serif;
-$caption-font                	: $base-font;
 $code-font                   	: monospace;
 $alt-font                    	: $heading-font;
 
@@ -16,6 +15,29 @@ $doc-font-size               	: 16;
 $doc-line-height             	: 24;
 
 $border-radius               	: 3px;
+
+$base-font-family: Lato;
+$base-font-size:   22px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
 
 /*
    Color variables
@@ -72,7 +94,6 @@ $form-border-color-focus     	: $primary-color;
 $form-border-radius          	: $border-radius;
 $form-box-shadow             	: inset 0 1px 3px hsla(0, 0%, 0%, 0.06);
 $form-box-shadow-focus       	: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
-$form-font-family            	: $base-font;
 $form-font-size              	: $doc-font-size;
 
 
@@ -108,3 +129,9 @@ $badge-font-color              : $white;
    ========================================================================== */
 
 $masthead-height: $button-size * 2;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
