@@ -2,6 +2,9 @@
 title: Jam Stack Tutorial
 timezone: UTC
 collections:
+  posts:
+    title: Posts
+    output: true
   products:
     title: Products
     output: true
@@ -9,11 +12,11 @@ collections:
     title: Uploads
     output: true
 description: Test site for Jamstack Commerce
-baseurl: "/snipcart-jekyll-integration" # the subpath of your site, e.g. /blog/
+baseurl: "/snipcart-jekyll-integration"
 snipcart_api_key: YjdiNWIyOTUtZTIyMy00MWMwLTkwNDUtMzI1M2M2NTgxYjE0
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: http://yourdomain.com
 twitter_username: Snipcart
-github_username:  Snipcart
+github_username: Snipcart
 markdown: kramdown
 feed:
   path: atom.xml
