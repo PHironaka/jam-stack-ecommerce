@@ -9,6 +9,7 @@ collections:
     title: Uploads
     output: true
 description: Test site for Jamstack Commerce
+baseurl: "/snipcart-jekyll-integration" # the subpath of your site, e.g. /blog/
 snipcart_api_key: Mjg2MjA2NzgtNzVhMy00ZjY4LWEzZDItYzlmZmViNmQ3MGUzNjM2NDE2MTA5MTE2OTk3NTU2
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: Snipcart
