@@ -14,9 +14,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: Howler Brand is the creative studio of Howler Monkey Productions.
-logo: "/uploads/logo-hmp.png"
-teaser: 
+description: Test site for Jamstack Commerce
 locale: en
 url: 
 feed:
@@ -67,10 +65,4 @@ exclude:
 - package.json
 - spec
 - tmp
-intro: Howler Monkey Productions Inc. is a soup-to-nuts video media company built
-  for today’s wild-west market of branded content consumption.  Howler is experienced
-  in long form cable/network/streamer branded series as well as short form narrative/stand
-  alone spots digital.  Nancy Hower and John Lehr use their scripted/hybrid production
-  style to market brands in unique and compelling ways that suit the product, the
-  platform and the viewer. Best of all, it’s all in one house – from concept to post
-  – providing the focus and convenience our clients need and deserve.
+Field name: 
